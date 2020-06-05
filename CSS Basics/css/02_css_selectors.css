@@ -1,0 +1,36 @@
+/* Element Selector */
+body {
+    background-color: black;
+}
+
+/* You can do it this way to be very specific to the h2 tag. Or the way below, just
+be aware that everything that has a reference to green-heading will be affected.*/
+/*h2#green-heading {
+    color: green;
+}*/
+
+/* Use a . to target a class */
+.primary-heading {
+    color: blue;
+}
+
+/* Use a # to target an id */
+#welcome {
+    background-color: #f4f4f4;
+}
+
+#about {
+    color: white;
+}
+
+/* Multiple Selectors */
+#welcome, #about {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* Nested Selectors */
+#welcome p {
+    font-size: 20px;
+}
