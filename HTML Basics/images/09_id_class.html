@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Div, span, id & class</title>
+        <style>
+            .card {
+                border: 1px solid #ccc;
+                background: #f4f4f4;
+                padding: 20px;
+                margin-bottom: 10px;
+            }
+
+            .enhance {
+                color: yellow;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <!-- Difference between id and class: While you can use both to refer to an element from your CSS,
+         you want to have a unique id for each element, while the class can be repeated. Therefore, don't
+         repeat id in the same page, and try to use class to refer to the style you want to apply -->
+    <body id="main-header">
+        <div>
+            <h1>My Website</h1>
+            <p>A site about me</p>
+        </div>
+        <ul id="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- The difference between div and span is that div is a block element, span is inline -->
+        <div id="about" class="card">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquid dolorem doloribus
+                <span class="enhance">eius excepturi explicabo incidunt iure mollitia necessitatibus nesciunt</span>
+                nisi nulla odit quis soluta tenetur totam veniam voluptate voluptatibus.</p>
+        </div>
+        <div id="contact" class="card">
+            <h3>Contact Me</h3>
+            <ul>
+                <li>Address: 123 Test</li>
+                <li>Phone: 123 456789</li>
+                <li>Email: test@test.ca</li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            <p>Copyright 2020</p>
+        </div>
+    </body>
+</html>
