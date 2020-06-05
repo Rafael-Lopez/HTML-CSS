@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+/* You could technically do:
+ #welcome span (no p)
+ as it will look for everything under the #welcome id. But it's clearer if you add the p */
+#welcome p span {
+    font-weight: bold;
+}
+
+#about p span {
+    font-style: italic;
+}
