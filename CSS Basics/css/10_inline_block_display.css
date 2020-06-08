@@ -1,0 +1,28 @@
+li {
+    display: inline;
+}
+
+li a{
+    padding-right: 20px;
+}
+
+/* If we want to center elements using 'margin: auto', the element needs to be a block element. */
+/* 'img' is an inline element, so we have to make it 'block' to be able to center it using 'margin: auto' */
+img {
+    display: block;
+    margin: auto;
+}
+
+.box {
+    /* We want them to be displayed horizontally, so we add width*/
+    width: 32%;
+    background: #f4f4f4;
+    padding: 20px;
+    /* We CANNOT use 'display: inline' with 'width' (same for 'margin-bottom') */
+    /* Instead, we use 'display: inline-block'. It's a mix of both, but it allows to use 'width' */
+    display: inline-block;
+    /* We have to add 'box-sizing: border-box' because we have width and padding */
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
+}
