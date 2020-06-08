@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav Bar Styling */
+.nav-bar {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background: #4c6ca8;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.nav-bar li a:hover {
+    background: #446190;
+    color: #f4f4f4;
+}
+
+/* Side Menu Styling */
+
+.side-menu {
+    list-style: none;
+    border: 1px #ddd solid;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+}
+
+.side-menu li {
+    font-size: 18px;
+    line-height: 2.4em;
+    border-bottom: 1px #ddd dotted;
+}
+
+/* Using pseudo-selector to target last element in the list*/
+.side-menu li:last-child {
+    border: none;
+}
+
+.side-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.side-menu li a:hover {
+    color: coral;
+}
