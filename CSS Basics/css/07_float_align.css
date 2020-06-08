@@ -1,0 +1,48 @@
+/* What we are doing here is just to show how float works, this should be done using flex or grid */
+
+/* Remember that when you have padding, it always adds to the width. Because we are using 'float: left' (and 70% and 30%),  */
+/* if we don't add 'box-sizing: border-box', then they won't fit as it would total of 100% + padding. This means we need to */
+/* add 'box-sizing: border-box' so that the padding is not added to the width. */
+* {
+ box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+
+.container {
+    /* Use max-width to make it more responsive */
+    max-width: 960px;
+    /* Use auto to center */
+    margin: 30px auto;
+}
+
+.box {
+    background: #f4f4f4;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.box p {
+    text-align: center;
+}
+
+#box-2 {
+    float: left;
+    width: 68%;
+}
+
+#box-3 {
+    float: right;
+    width: 30%;
+}
+
+/* When using float, you usually have to clear after the floating elements */
+/* If we don't do it here, the next element will be behind the floating elements*/
+.clr {
+    /* Clears both sides */
+    clear: both;
+}
