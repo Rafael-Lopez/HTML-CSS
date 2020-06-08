@@ -1,0 +1,44 @@
+/* Pseudo-selectors (Pseudo-classes) */
+/* A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdona, sans-serif ;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: coral;
+}
+
+/*a:visited {
+    color: red;
+}*/
+
+a:active {
+    color: red;
+}
+
+.btn {
+    background: #4c6c80;
+    color: #f4f4f4;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #f4f4f4;
+    background: #446190;
+}
