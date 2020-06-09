@@ -1,0 +1,18 @@
+h1 {
+    /* Removes the element rom the DOM completely */
+    /*display: none;*/
+
+    /* Element is hidden, but still takes space in the DOM */
+    /*visibility: hidden;*/
+
+    color: blue;
+}
+
+/* The order in which the content appears in this file matters when determining what is the property value to use */
+/* However, when targeting a class, this will always take priority. If we moved this to the top it would still be applied */
+/* You can use the !important flag 'color: blue !important;' above, to make sure blue is the value applied */
+.hello {
+    color: red;
+    margin-top: -30px;
+    margin-left: -30px;
+}
