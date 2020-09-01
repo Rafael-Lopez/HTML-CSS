@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    background-color: #f4f4f4;
+    height: 50vh;
+
+    display: flex;
+    /*Remember, by default flex-direction is "row". This means all
+    items are added horizontally. So when you use align-items: center,
+    this aligns all items using the X axis as the reference*/
+    align-items: center;
+    /*If you were to change flex-direction to "column", then the
+    items would be aligned using the Y axis*/
+
+    justify-content: center;
+    /*justify-content: space-around;*/
+    /*justify-content: space-between;*/
+}
+
+.item {
+    background: #f4f4f4;
+    border: #ccc solid 2px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    /*flex: 1;*/
+}
+
+.item1 {
+     align-self: flex-start;
+ }
+
+.item3 {
+    align-self: flex-end;
+}
