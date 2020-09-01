@@ -56,13 +56,13 @@
     height: 100%;
 }
 
-.flex-items div {
+.flex-items > div {
     padding: 20px;
 }
 
 /*Flex Columns*/
 .flex-columns .flex-reverse .row {
-    flex-direction: revert;
+    flex-direction: row-reverse;
 }
 
 .flex-columns .row {
@@ -134,7 +134,7 @@
 .flex-grid .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 40px;
+    padding: 0 4px;
 }
 
 .flex-grid .column {
