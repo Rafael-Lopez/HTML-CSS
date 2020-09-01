@@ -13,6 +13,8 @@ body {
 
     /*flex-direction: column;*/
 
+    /*Flex items shrink by default when resizing window to a smaller size and there's not enough space*/
+    /*You can use flex-wrap so that they don't shrink*/
     /*flex-wrap: wrap;*/
 }
 
@@ -23,5 +25,33 @@ body {
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-    width: 200px;
+    /*width: 200px;*/
+
+    /*flex: grow shrink basis*/
+    /*flex: 1 0 200px;*/
+
+    flex: 1;
 }
+
+.item3 {
+    flex: 2;
+}
+
+/*.item1 {*/
+/*    !*This item will not shrink*!*/
+/*    flex-shrink: 0;*/
+/*}*/
+
+/*.item2 {*/
+/*    !*Fill up remaining space of the container*!*/
+/*    flex-grow: 1;*/
+
+/*    flex-basis: 0;*/
+/*}*/
+
+/*.item3 {*/
+/*    !*This item grows twice the size of item2*!*/
+/*    flex-grow: 2;*/
+
+/*    flex-basis: 0;*/
+/*}*/
