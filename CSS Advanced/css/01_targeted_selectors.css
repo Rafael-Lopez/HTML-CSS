@@ -1,0 +1,30 @@
+/*Direct child*/
+div > p {
+    background: #ddd;
+}
+/*Without the >, then every p in a div, would be affected even if it's not a direct child*/
+
+/*Directly after (at the same level...not inside)*/
+div + p {
+    background: #333;
+    color: #fff;
+}
+
+/*By attribute*/
+a[target] {
+    background: #ff0000;
+    color: #fff;
+}
+
+/*By attribute with a specific value*/
+a[target='_blank'] {
+    background: #28a745;
+    color: #fff;
+}
+
+/*More specific attribute values*/
+input[type='text'],
+input[type='email'] {
+    width: 100%;
+    margin-bottom: 5px;
+}
