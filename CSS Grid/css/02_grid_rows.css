@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+
     /*This only affects the first 3 rows*/
     grid-template-rows: 1fr 2fr 3fr;
     /*Sets implicit grid row value for the rest of the rows - default value*/
