@@ -1,0 +1,32 @@
+body {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    background: white;
+    width: 100px;
+    height: 100px;
+
+    /*Transitions are used when an event happens*/
+
+    /*transition-property: background;*/
+    /*transition-duration: 2s;*/
+    /*transition-delay: 3s;*/
+    /*transition-timing-function: ease-in-out;*/
+
+    transition: background, border-radius 2s ease-in-out 3s;
+    /*You can do it this way, or use 'all' instead of specifying each property.
+    Unless there are properties you don't want to transition*/
+    transition: all 2s ease-in-out 3s;
+}
+
+.box:hover {
+    background: red;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
