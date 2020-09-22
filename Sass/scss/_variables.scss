@@ -1,12 +1,9 @@
 /*If you start the filename with an underscore, Sass will not
 transpile it. Files named this way are called partials in Sass.*/
 /*In other words, the compiler won't generate a CSS file for this file */
-* {
-  margin: 0;
-  padding: 0; }
 
-body {
-  background: #f4f4f4;
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5; }
+$primary-color: steelblue;
+$secondary-color: skyblue;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$font-stack: Arial, Helvetica, sans-serif;
